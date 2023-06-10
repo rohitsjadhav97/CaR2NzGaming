@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+}
+.container{
+    padding: 2rem 7rem;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 5px 10px black;
+}
+.images{
+    display: flex;
+    column-gap: 7rem;
+}
+.result img{
+    width: 100px;
+    height: 100px;
+}
+.computer .rotate{
+    transform: rotate(-180deg) rotateX(180deg) ;
+}
+.game-result{
+    text-align: center;
+    font-size: 2rem;
+    color: #7d2ae8;
+    margin-top: 1.5rem;
+}
+.option-img img{
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+.option-img img:hover{
+    opacity: 1;
+}
+.options p{
+    color: #7d2ae8;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.start .user img{
+    animation: userShake 0.7s ease infinite;
+}
+.start .computer img{
+    transform-origin: right;
+    animation: computerShake 0.7s ease infinite;
+}
+
+.unclick{
+    pointer-events: none;
+}
+
+@keyframes userShake {
+    50%{
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes computerShake {
+    50%{
+        transform: rotate(-10deg);
+    }
+}

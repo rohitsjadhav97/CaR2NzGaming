@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <div class="images">
+                <span class="user">
+                    <img src="./images/rock.png" alt="">
+                </span>
+                <span class="computer">
+                    <img src="./images/comp_rock.png" alt="">
+                </span>
+            </div>
+            <div class="game-result">Let's Play!!</div>
+        </div>
+        <div class="options">
+            <div class="option-img">
+                <img src="./images/rock.png" alt="" onclick="gameOn('rock')">
+                <p>Rock</p>
+            </div>
+            <div class="option-img">
+                <img src="./images/paper.png" alt="" onclick="gameOn('paper')">
+                <p>Paper</p>
+            </div>
+            <div class="option-img">
+                <img src="./images/scissor.png" alt="" onclick="gameOn('scissor')">
+                <p>Scissor</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
